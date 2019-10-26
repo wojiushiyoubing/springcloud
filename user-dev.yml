@@ -1,0 +1,16 @@
+server:
+  port: 9101
+  
+spring:
+  application:
+   name: microservice-user
+  
+eureka:
+  client:
+   register-with-eureka: true
+   fetch-registry: true
+   service-url: 
+    defaultZone: http://127.0.0.1:8888/eureka
+    
+  instance:
+    prefer-ip-address: true
